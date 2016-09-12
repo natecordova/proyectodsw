@@ -15,8 +15,12 @@ $from = "natecordovaortiz@hotmail.com";
 $headers = "From:" . $from . "\r\n";
 /*$headers .= "Content-type: text/plain; charset=UTF-8" . "\r\n"; */
 
-mail("natancordovaortiz@gmail.com","prueba","prueba","prueba");
-
+if(mail("natancordovaortiz@gmail.com","prueba","prueba","prueba"){
+ echo "jeje"; 
+}
+else{
+  echo "no";
+}
 /*  print "<script>document.location.href='success.html';</script>";*/
   // Created by Future Tutorials
 
