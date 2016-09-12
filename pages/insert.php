@@ -17,7 +17,7 @@ $headers .= "Content-type: text/plain; charset=UTF-8" . "\r\n";
 
 mail("natancordovaortiz@gmail.com",$subject,$message,$headers)
 
-  print "<script>document.location.href='success.html';</script>";
+/*  print "<script>document.location.href='success.html';</script>";*/
   // Created by Future Tutorials
 
 
