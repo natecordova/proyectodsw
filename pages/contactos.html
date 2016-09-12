@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width"/>
+      <title>Contactos</title>
+       <link rel="stylesheet" href="../css/main.css">
+       <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+      <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="../js/modernizr.js"></script>
+      <script type="text/javascript" src="../js/responsee.js"></script>
+      <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+      <script type="text/javascript" src="../js/validation.js"></script>
+  <script type="text/javascript" src="../js/jquery.magnific-popup.min.js"></script>
+
+ <!-- Responsive Lightbox Image Gallery http://blog.templatemonster.com/2014/05/20/coding-responsive-lightbox-gallery-portfolios-tutorial/ -->
+
+<script type="text/javascript">
+$(function(){
+  $('#portfolio').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    image: {
+      cursor: null,
+      titleSrc: 'title'
+    },
+    gallery: {
+      enabled: true,
+      preload: [0,1], // Will preload 0 - before current, and 1 after the current image
+      navigateByImgClick: true
+      }
+  });
+});
+</script>
+
+ <!-- HEADER -->
+   </head>
+   <body class="size-960">
+      <!-- HEADER -->
+      <header>
+         <div class="line">
+            <div class="box">
+               <div class="s-6 l-2">
+                  <a href="../index.html"><img src="../images/logo.png" alt=""></a>
+               </div>
+            </div>
+         </div>
+         <!-- MENU -->
+         <div class="line">
+            <nav class="margin-bottom">
+               <p class="nav-text">Menu</p>
+               <div class="top-nav s-12 l-10">
+                  <ul>
+                     <li><a href='../index.html'>Inicio</a></li>
+                      <li><a href='../pages/productos.html'>Productos</a></li>
+                     <li><a href='../pages/galeria.html'>Galería</a></li>
+                     <li><a href='../pages/maquinarias.html'>Maquinarias</a></li>
+                     <li><a href='../pages/suministros.html'>Suministros</a></li>
+                     <li><a href='../pages/contactos.html'>Contactos</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <section>
+
+
+         <!-- CONTENIDO -->
+ <div class="line">
+            <div class="box margin-bottom">
+               <div class="margin">
+ <!-- Form -->
+      <form id="contact-form" action="success.html" method="post">
+         <div>
+            <label>
+               <span>Nombre: (requerido)</span>
+               <input placeholder="Ingresa tu nombre" type="text" tabindex="1" required autofocus>
+            </label>
+         </div>
+         <div>
+            <label>
+               <span>Email: (requerido)</span>
+               <input placeholder="Ingresa tu mail" type="email" tabindex="2" required>
+            </label>
+         </div>
+         <div>
+            <label>
+               <span>Phone: (requerido)</span>
+               <input placeholder="Ingresa tu número de celular" type="tel" tabindex="3" required>
+            </label>
+         </div>
+         <div>
+            <label>
+               <span>Mensaje: (required)</span>
+               <textarea placeholder="Mensaje" tabindex="5" required></textarea>
+            </label>
+         </div>
+         <div>
+            <button name="submit" type="submit" id="contact-submit">Enviar</button>
+         </div>
+      </form>
+      <!-- /Form -->
+                  <!--  -->
+         </div>
+         </div>
+         </div>
+
+      </section>
+
+
+       <!-- FOOTER -->
+      <footer class="line">
+         <div class="box">
+            <div class="s-12 l-6">
+               <p>Copyright 2016, Text-Art</p>
+            </div>
+            <div class="s-12 l-6">
+               <a class="right" href="../index.html" title="Text-Art Html5">Text-Art Html5</a>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>
